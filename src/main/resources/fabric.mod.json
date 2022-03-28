@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "example_mod",
+  "version": "${version}",
+  "name": "Example Mod",
+  "description": "A Simple Voice Chat API mod example",
+  "authors": [
+    "Example Author"
+  ],
+  "contact": {
+    "homepage": "https://example.com/",
+    "sources": "https://github.com/henkelmax/voicechat-api-fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/example_mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.voicechatmod.ExampleMod"
+    ],
+    "voicechat": [
+      "com.example.voicechatmod.ExampleVoicechatPlugin"
+    ]
+  },
+  "mixins": [
+    "example_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": ">=${fabric_version}",
+    "minecraft": "${minecraft_dependency}",
+    "java": ">=${java_version}",
+    "voicechat": ">=${voicechat_dependency}"
+  }
+}
